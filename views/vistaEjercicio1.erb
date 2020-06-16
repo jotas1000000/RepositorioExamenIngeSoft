@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>El balance de tu cuenta es: <%= @@balance%></p><br>
+    <form action="/registerMount" method="post">
+        <label for="number">Escriba el monto:</label>
+        <input type="number" id="number" name="number" value=""><br>
+        <input type="submit" value="Depositar">
+    </form>
+</body>
+</html>
